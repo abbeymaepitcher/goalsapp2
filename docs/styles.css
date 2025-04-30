@@ -1,0 +1,35 @@
+#goalList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#goalList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#goalList li span {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+#goalList li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #c00;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  color: #800;
+}
